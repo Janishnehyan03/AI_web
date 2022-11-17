@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --light-blue: rgba(44, 142, 227, 0.936);
+  --dark-blue: rgb(4, 14, 27);
+  --light-gray: rgb(243, 243, 243);
+}
+section {
+  margin: 2rem;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.title {
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 30px;
+}
+nav {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo .logo-title {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+nav .logo .logo-title h1 {
+  margin-left: 30%;
+  color: white;
+}
+nav .logo h2 {
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+nav .logo span {
+  color: var(--light-blue);
+}
+nav ul li {
+  display: inline-block;
+}
+nav li .active {
+  color: var(--dark-blue);
+}
+nav ul li a {
+  color: gray;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+}
+nav button {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: var(--light-blue);
+  border-radius: 25px;
+}
+.discover {
+  /* background-color: var(--light-gray); */
+  padding: 2rem;
+}
+.discover h1 {
+  font-size: 60px;
+  color: var(--dark-blue);
+}
+.discover p {
+  color: gray;
+  width: 700px;
+  line-height: 20px;
+  margin: 1rem 0;
+}
+.discover p span {
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+.discover .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.discover input {
+  padding: 10px 30px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 30px;
+  /* border: 1px solid gray; */
+  width: 300px;
+  height: 60px;
+}
+.discover ul li {
+  display: inline;
+}
+.discover ul li a {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+.discover .active {
+  background-color: var(--light-blue);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.articles .bg-container {
+  background-image: linear-gradient(
+      rgba(6, 16, 24, 0.539),
+      rgba(16, 32, 49, 0.594)
+    ),
+    url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  border-radius: 20px;
+  height: 18rem;
+  text-align: center;
+  color: rgb(206, 206, 206);
+}
+.articles .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.articles h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 1rem 0;
+}
+.articles .bg-container h1 {
+  font-size: 45px;
+}
+.articles .flex {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: 300px;
+  padding: 13px;
+  color: var(--dark-blue);
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.articles .flex img {
+  margin-right: 20px;
+}
+.articles p {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.articles p span {
+  color: var(--light-blue);
+}
+.articles .blogs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+.articles .blogs .container {
+  margin: 10px;
+}
+.articles .blogs h1 {
+  color: var(--dark-blue);
+}
+
+.articles .blogs .container img {
+  width: 100%;
+  border-radius: 20px;
+}
+.articles .blogs p {
+  font-weight: normal;
+  color: gray;
+  line-height: 23px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.articles .blogs button {
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 30px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  border: 0.5px solid var(--dark-blue);
+  background-color: white;
+}
+.articles .blogs .active {
+  background-color: var(--light-blue);
+  color: white;
+  border: none;
+}
+.articles .blogs .author {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.subscribe {
+  background-color: var(--dark-blue);
+  padding: 4rem;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: white;
+}
+.subscribe p{
+    color: gray;
+}
+.subscribe input{
+    padding: 20px;
+    width: 400px;
+    border-radius: 30px;
+}
+.subscribe button{
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+}
